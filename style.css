@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  -soft-blue: hsl(215, 51%, 70%);
+  -cyan-cyan: hsl(178, 100%, 50%);
+  -very-dark-blue-mainbg: hsl(217, 54%, 11%);
+  -very-dark-blue-cardbg: hsl(216, 50%, 16%);
+  -very-dark-blue-line: hsl(215, 32%, 27%);
+  -white: hsl(0, 0%, 100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(217, 54%, 11%);
+}
+
+.container {
+  background: hsl(216, 50%, 16%);
+  width: 350px;
+  height: 600px;
+  border-radius: 25px;
+  padding: 25px;
+}
+
+.headingcon {
+  position: relative;
+  border-radius: 10px;
+}
+
+.headingcon span {
+  content: "";
+  position: absolute;
+  left: 0;
+  border-radius: 10px;
+  opacity: 0.4;
+  width: 100%;
+  pointer-events: none;
+  height: 100%;
+}
+
+.headingcon img.headingIMG {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.container h1 {
+  font-size: 22px;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.container h1:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.container p {
+  font-size: 18px;
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+}
+
+.price-time {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  border-bottom: hsl(215, 32%, 27%) 1px solid;
+}
+
+.price-time p {
+  font-size: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.price-time p.price {
+  color: hsl(178, 100%, 50%);
+  font-weight: 400;
+}
+
+span.eth {
+  content: url("images/icon-ethereum.svg");
+  padding: 1px;
+  /* background-image: url("images/icon-ethereum.svg"); */
+}
+
+span.clock {
+  content: url("images/icon-clock.svg");
+  padding: 1px;
+}
+
+.container p.footer {
+  height: 40px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  gap: 5px;
+}
+
+.container p.footer img {
+  margin-right: 20px;
+  border: #fff 1px solid;
+  border-radius: 50%;
+  height: 100%;
+}
+
+.container p.footer span {
+  color: #fff;
+  cursor: pointer;
+}
+
+.container p.footer span:hover {
+  color: hsl(178, 100%, 50%);
+}
